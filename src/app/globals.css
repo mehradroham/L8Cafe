@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Vazir;
+  font-weight: normal;
+  font-style: normal;
+
+   src:url('/fonts/woff2/Vazirmatn-Regular.woff2') format('woff2');
+    src:url('/fonts/ttf/Vazirmatn-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+#body{
+  box-sizing: border-box;  
+  font-family:  @apply !font-main;
+}
+/* section.hero{
+    @apply grid;
+    grid-template-columns: .4fr .6fr;
+    
+}; */
+
+/* section p.txttopright{
+    direction: rtl;
+    
+ 
+}
+
+section form.registerform{
+    direction: rtl;
+} */
+.x{
+  direction: rtl;  
+}
+form input{
+    /* padding-right: 10px;
+    margin-right: 10px; */
+    
+    
+    direction: rtl;
+    @apply my-2 rounded-xl;
+    @apply border p-2 border-gray-300 bg-gray-100;
+    width:90%;
+}
+form input label{
+   
+    
+    
+    direction: rtl;
+    
+}
+
+/* form input:focus{
+    @apply border p-2 border-gray-400 bg-gray-200;
+} */
+
+
+button {
+    display: inline-block;
+ 
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+/* border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent; */
+  padding: .375rem .75rem;
+  
+  border-radius: 2px;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    width:80%;
+    
+    
+}
+button[type="submit"],button.submit{
+    @apply border-0 bg-primary text-white font-semibold;
+}
+
+button[type="submit"]:hover,button.submit:hover{
+    @apply border-0 bg-secondary text-white ;
+    transition: ease 0.5s;
+
+}
+
+.btnimage{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.textregister {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+};
+
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="tesxt"]:disabled{
+    @apply bg-gray-300;
+}
+
+button[type="submit"]:disabled,.submit:disabled{
+  @apply cursor-not-allowed bg-red-400;
+
+}
+
+
+.profile-input{
+    
+    @apply my-2 rounded-xl;
+    @apply border p-2 border-gray-300 bg-gray-100;
+}
+
+.profile-input:focus{
+    
+    all:unset;
+}
+.profile-input:focus{
+    
+    @apply my-2 rounded-xl;
+    @apply border p-2 border-gray-400 bg-gray-200;
+}
+
+ 
+ .profile-input-lock{
+@apply bg-gray-300 text-gray-500
+ }
+ .form{
+    width:30%;
+ }
+
+ 
+
+.active{
+ @apply border-b-2   text-primary;
+}

@@ -1,0 +1,213 @@
+@tailwind components;
+@tailwind utilities;
+
+
+
+.hero{
+ display:flex!important;
+ justify-content:space-around!important;
+ align-items:center!important; 
+ flex-wrap: wrap;
+ margin-top:0px!important;
+width:100%;
+height:1000px;
+background-image: url("/images/hero-image.png");
+background-repeat: no-repeat;
+background-size: cover;
+position:absolute;
+overflow:hidden;
+top:15px;
+left:0;
+}
+
+
+
+
+
+.imgrotate{
+ display:flex!important;
+ justify-content: center!important;
+ align-items:center!important;
+ width:20%;
+
+
+}
+
+#lefttoptext{
+    min-width:45%;
+     position: absolute;
+  z-index: 200;
+  left:30px;
+  max-width:45%;
+  
+}
+#headers{
+    font-size:22px;
+    color:#F1F8FF;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+    width:100%;
+    z-index: 5200;
+    top:0;
+    
+    opacity:1;
+    margin-top:0;
+    position: fixed;
+ 
+} 
+@media only screen and (max-width: 600px){
+  #headers{
+   
+    max-width :100%;
+  }
+}
+
+@media only screen and (max-width: 370px){
+  #headers{
+   
+     max-width :100%;
+  }
+}
+@media only screen and (max-width: 900px){
+  #headers{
+   
+     font-size:14px;
+  }
+  
+    
+ 
+}
+@media only screen and (max-width: 1600px){
+  #headers{
+   
+     font-size:22px;
+  }
+  
+    
+ 
+}
+@media only screen and (max-width:1200px){
+  #headers{
+   
+     font-size:18px;
+  }
+  
+    
+ 
+}
+@media only screen and (max-width: 1000px){
+  #headers{
+   
+     font-size:16px;
+  }
+  
+    
+ 
+}
+
+@media only screen and (max-width: 730px){
+  #Bottomtext,
+  #Bottomtext2,
+  #Bottomtext3{
+   
+     font-size:16px;
+     max-width: 80%;
+  }
+  
+    
+ 
+}
+
+
+
+#overlayer{
+    position:absolute;
+   width:100%; 
+background-color: #000000;
+z-index: 100;
+height:1000px;
+opacity:0.7;
+top:15px;
+left:0;
+}
+
+#layer{
+position:relative;
+display:block;
+overflow:hidden;
+
+background-color: red;
+height:1000px; 
+color:red;
+width:100%;
+opacity:0;
+}
+
+#footer{
+  width:100%;
+  background-color:red;
+  position:absolute;
+  overflow:hidden;
+  left:0;
+  background-color:#060b22;
+}
+
+
+  
+
+#imgheader{
+ height:130px;
+  width:180px;
+  min-height:130px;
+  min-width:180px;
+}
+
+/* #imgheader Image{
+  max-height:20px;
+} */
+
+
+#menu{
+  z-index:1000;
+  max-width:100% ;
+}
+
+
+#admin{
+    position:absolute;
+    z-index:0;
+    background-color:transparent;
+    display:flex;
+    
+    height:30px;
+    color:light!important;
+    
+    width:70%;
+    margin-top:90px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#Link1,#Link2,#Link3,#Link4,#Link5{
+ @apply   text-light  font-semibold  px-4   bg-dark  bg-opacity-0  hover:border-b-2  hover:bg-opacity-20  hover:text-primary text-center text-nowrap md:text-xl lg:text-2xl text-sm
+}
+
+#Link5{
+  pointer-events:none;
+}
+
+
+#shopping{
+  pointer-events:none;
+}
+
+
+
+#btnbuying{
+  pointer-events:none;
+}
+
+#btnbuying2{
+  pointer-events:none;
+}

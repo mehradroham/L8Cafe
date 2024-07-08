@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@/*": [
+        "./*" // -> change the path to what you you want
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+  
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+      "target": "es5",
+ 
+  
+    
+   
+    "forceConsistentCasingInFileNames": true,
+   
+
+    "moduleResolution": "Node",
+   
+    
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/app/api/auth/[...nextauth]/route.js"
+  ],
+  "exclude": ["node_modules"]
+}
