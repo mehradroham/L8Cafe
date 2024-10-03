@@ -138,9 +138,9 @@ export default function Footer() {
                 </a>
                 <a class="text-indigo-400">l8rooftop@gmail.com</a>
                 <p class="my-5 leading-normal">
-                  خیابان هفت تیر -خیابان کریم خان - خیابان حسینی - ابتدای کوچه
-                  دوم غربی - پلاک ۳ واحد ۲۳ <br />
-                  ☎️ تلفن :09120305336
+                  آدرس
+                <br />
+                  ☎️ تلفن :
                 </p>
               </div>
               <p id={Styles.Bottomtext2} className="w-full text-center my-2 text-gray-600">  طراحی شده توسط 
